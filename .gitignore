@@ -1,0 +1,13 @@
+# Logs
+log
+npm-debug.log*
+
+# Dependency directories
+node_modules/
+package.json
+
+# dotenv environment variable files
+.env
+.env.production.local
+
+upload

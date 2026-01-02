@@ -1,0 +1,1 @@
+insert into users (user_username, user_password) values ('zakiydev', '1571515z') returning *;
