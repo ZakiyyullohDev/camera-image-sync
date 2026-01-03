@@ -11,6 +11,15 @@ const AuthCtrl = {
             ExpressFunctions.controllerError(res, error)
         }
     },
+    login: async (req, res) => {
+        try {
+            const model = await AuthModel.login(req.body);
+
+            return res.status(200).json(model)
+        } catch (error) {
+            ExpressFunctions.controllerError(res, error)
+        }
+    }
 }
 
 module.exports = AuthCtrl;

@@ -10,4 +10,10 @@ express.post(
     AuthCtrl.register
 );
 
+express.post(
+    '/api/auth/login',
+    validationMiddleware(AuthDto.authLoginDto, 'body'),
+    AuthCtrl.login
+);
+
 module.exports = express;
