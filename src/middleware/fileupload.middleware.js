@@ -51,6 +51,4 @@ function fileuploadMiddleware(reqFileKeyName, allowedFileTypes, allowedFileSize,
     }
 }
 
-module.exports = {
-    fileuploadMiddleware,
-};
+module.exports = fileuploadMiddleware
